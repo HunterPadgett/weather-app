@@ -1,0 +1,33 @@
+* {
+ 
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.jumbotron {
+  background-color: #c8d8e4;
+}
+
+.recentSearch {
+  background-color: #f2f2f2;
+}
+
+button {
+  background-color: #2b6777 !important;
+  color: white !important;
+}
+
+#mainWeather {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+}
+
+
+
+#day1, #day2, #day3, #day4, #day5 {
+  background-color: #52ab98;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <title>Weather App</title>
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4 text-center">Weather App</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <section class="col-12 col-md-4 col-lg-3 ml-3">
+      <div class="searchContainer">
+        <h2 class="card-header">
+          Search for a City:
+        </h2>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        <div class="searchBtn">
+          <button class="btn btn-block custom-btn text-center m-1">Search</button>
+        </div>
+      </div>
+      <ul class="recentSearch list-group list-group-flush mt-4">
+        <li class="list-group-item">recent searches</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+    </section>
+    
+
+    <section class="col-12 col-md-7 col-lg-8 ml-4" id="mainWeather">
+      <h2 class="m-1 h1">city name</h2><div id="icon"></div>
+      <div id="temp" class="mt-4">Temperature:</div>
+      <div id="wind" class="mt-5">Wind Speed:</div>
+      <div id="humidity" class="mt-5">Humidity:</div>
+      <div id="uv" class="mt-5">UV:</div>
+    </section>
+  </div>
+  <hr>
+  <section class="row d-flex justify-content-center" id="fiveDay">
+    <card id="day1" class="col-2 m-1">
+      <div class="mt-1" id="date1">date</div>
+      <div class="mt-1" id="icon1"></div>
+      <div class="mt-1" id="temp1">Temperature:</div>
+      <div class="mt-1" id="wind1">Wind Speed:</div>
+      <div class="mt-1" id="humidity1">Humidity:</div>
+    </card>
+    <card id="day2" class="col-2 m-1">
+      <div class="mt-1" id="date2">date</div>
+      <div class="mt-1" id="icon2"></div>
+      <div class="mt-1" id="temp2">Temperature:</div>
+      <div class="mt-1" id="wind2">Wind Speed:</div>
+      <div class="mt-1" id="humidity2">Humidity:</div>
+    </card>
+    <card id="day3" class="col-2 m-1">
+      <div class="mt-1" id="date3">date</div>
+      <div class="mt-1" id="icon3"></div>
+      <div class="mt-1" id="temp3">Temperature:</div>
+      <div class="mt-1" id="wind3">Wind Speed:</div>
+      <div class="mt-1" id="humidity3">Humidity:</div>
+    </card>
+    <card id="day4" class="col-2 m-1">
+      <div class="mt-1" id="date4">date</div>
+      <div class="mt-1" id="icon4"></div>
+      <div class="mt-1" id="temp4">Temperature:</div>
+      <div class="mt-1" id="wind4">Wind Speed:</div>
+      <div class="mt-1" id="humidity4">Humidity:</div>
+    </card>
+    <card id="day5" class="col-2 m-1">
+      <div class="mt-1" id="date5">date</div>
+      <div class="mt-1" id="icon5"></div>
+      <div class="mt-1" id="temp5">Temperature:</div>
+      <div class="mt-1" id="wind5">Wind Speed:</div>
+      <div class="mt-1" id="humidity5">Humidity:</div>
+    </card>
+    
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/script.js"></script>
+</body>
+
+</html>
