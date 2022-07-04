@@ -24,9 +24,12 @@ button {
   border-width: 1px;
   border-color: rgb(0, 0, 0);
   font-size: 1.5rem;
+  background-color: #52ab98;
 }
 
-
+img {
+ 
+}
 
 #day1, #day2, #day3, #day4, #day5 {
   background-color: #52ab98;
