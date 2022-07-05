@@ -11,19 +11,21 @@
 </head>
 
 <body>
+  <!-- jumbotron header of page -->
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4 text-center">Weather App</h1>
     </div>
   </div>
-
+  <!-- search bar, button and recently searched area -->
   <div class="row">
     <section class="col-12 col-md-4 col-lg-3 ml-3">
       <div class="searchContainer">
         <h2 class="card-header">
           Search for a City:
         </h2>
-        <input type="text" class="form-control" id="cityInput" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        <input type="text" class="form-control" id="cityInput" aria-label="Default"
+          aria-describedby="inputGroup-sizing-default">
         <div class="searchBtn">
           <button class="btn btn-block custom-btn text-center m-1" id="fetchBtn">Search</button>
         </div>
@@ -33,8 +35,8 @@
         <li class="list-group-item" id="cityStore"></li>
       </ul>
     </section>
-    
 
+    <!-- current weather area -->
     <section class="col-12 col-md-7 col-lg-8 ml-4" id="mainWeather">
       <h2 class="m-1 h1" id="cityName">city name</h2>
       <p id="date"></p>
@@ -42,10 +44,12 @@
       <div id="temp" class="mt-4">Temperature:</div>
       <div id="wind" class="mt-5">Wind Speed:</div>
       <div id="humidity" class="mt-5">Humidity:</div>
-      <div id="uv" class="mt-5">UV: *could not figure out how to fetch and combine UV data from seperate API using lat and long rather than searching by city name* </div>
+      <div id="uv" class="mt-5">UV: *could not figure out how to fetch and combine UV data from seperate API using lat
+        and long rather than searching by city name* </div>
     </section>
   </div>
   <hr>
+  <!-- five day forecast area -->
   <h2 class="d-flex justify-content-center">Five Day Forecast</h2><br>
   <section class="row d-flex justify-content-center" id="fiveDay">
     <card id="day1" class="col-6 col-md-2 m-1">
@@ -83,7 +87,7 @@
       <div class="mt-1" id="wind5">Wind Speed:</div>
       <div class="mt-1" id="humidity5">Humidity:</div>
     </card>
-    
+
   </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

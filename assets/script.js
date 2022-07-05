@@ -88,6 +88,7 @@ function fivedayWeather() {
     })
 }
 
+// local storage of searched cities
 function textSave() {
   localStorage.setItem('cityname', citySearch.value)
   var key = localStorage.key(citySearch.value)
